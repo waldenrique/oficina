@@ -9,11 +9,14 @@
             <div class="text-ser">
             
                 <h1><b>Serviços</b></h1>
-                {% for chave, nome_servico in nome_servico.items %}
+                {% if servicos %}
+                {% for servicos in servicos %}
                 <P> <ul>
-                    <li>{{nome_servico}}</li>
+                    <li>{{ servicos.nome_servico }}</li>
                 </ul> </P>
                 {% endfor %}
+                {% else %}
+                {% endif %}
             </div>
         
             <div class="img-ser">
