@@ -96,14 +96,6 @@ DATABASES = {
 }
 
 
-# my.cnf
-[client]
-database = oficina
-user = oficina
-password = Wa@14851
-default-character-set = utf8
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
