@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div Class ="contenier"> 
+    {%  include 'partials/menu.html'  %}
+        <!-- Fim do Menu -->
+        <!-- Corpo do site-->
+        <main>
+            <div class="text-bx">
+                <h1><b>Blog</b></h1>
+                <P> Notícias do mundo automobilístico. em Breve!
+                </P>
+            </div>
+            
+            <div class="img-bx">
+                <img src={% static 'img/mec.png'%}>
+            </div>
+        </main>
+         <!-- fim do Corpo do site-->
+         <!-- rodape-->
+         {%  include 'partials/footer.html'  %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href={% static 'stilo.css'%}>
+    <link rel="icon" type="image/x-icon" href={% static 'img/Favicon.ico' %}>
+    <meta name=”description” content="Site em Teresina Piauí de uma oficina mecanica, Moura auto center">
+</head>
+
+<body>
+
+    {% block content %} {% endblock%}
+ 
+</body>
+
+   
+   <!-- Chamada Javascript-->
+   <script src={% static 'main.js'%}> </script>
+</html>

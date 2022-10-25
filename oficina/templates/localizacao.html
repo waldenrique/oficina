@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div Class ="contenier"> 
+    {%  include 'partials/menu.html'  %}
+        <!-- Fim do Menu -->
+        <!-- Corpo do site-->
+        <main>
+            <div class="text-ser">
+                <h1><p><b>Localização</b></p></h1>
+                <P> Traga seu carro e venha conferir um serviço diferenciado
+                    de qualidade,
+                    <p>clique em Direções e veja no mapao caminho ate a auto center
+                </P>
+            
+            </div>
+            
+            <div class="img-loc">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15897.67956493321!2d-42.8154809!3d-5.0354589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd478386418159e78!2sAUTO%20CENTER%20MOURA!5e0!3m2!1spt-PT!2spt!4v1665865285751!5m2!1spt-PT!2spt"  height="300" width="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+         <!-- fim do Corpo do site-->
+         <!-- rodape-->
+         {%  include 'partials/footer.html'  %}
+</div>
+{% endblock %}

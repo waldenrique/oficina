@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div Class ="contenier"> 
+    {%  include 'partials/menu.html'  %}
+        <!-- Fim do Menu -->
+        <!-- Corpo do site-->
+        <main>
+            <div class="text-ser">
+            
+                <h1><b>Serviços</b></h1>
+                {% for chave, nome_servico in nome_servico.items %}
+                <P> <ul>
+                    <li>{{nome_servico}}</li>
+                </ul> </P>
+                {% endfor %}
+            </div>
+        
+            <div class="img-ser">
+                <img src={% static 'img/ser.png'%}>
+            </div>
+        </main>
+         <!-- fim do Corpo do site-->
+         <!-- rodape-->
+         {%  include 'partials/footer.html'  %}
+</div>
+{% endblock %}
+ 

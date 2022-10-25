@@ -1,0 +1,375 @@
+/* IMPORTANDO A FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0
+    border-box;
+    font-family: 'Roboto',sans-serif;
+}
+/* CORPO PRINCIPAL */
+body{
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.contenier{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}   
+/* MENU */
+nav{
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #f1f1f1;
+    margin: 0 0 80px 0;
+ 
+}
+nav .menu-icon{
+    cursor: pointer;
+    margin: 1cm;
+    display: none;
+    
+}
+nav .logo a{
+   
+    padding: 0 10px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000d13;
+    font-style: bold;
+}
+a.nav.ul.li:visited{
+    border: none;
+    text-decoration:none;
+}
+a.nav.ul.li:hover{
+    border: none;
+    background-color: #e46013;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration:none;
+}
+a.nav.ul.li:active{
+    border: none;
+    background-color: #e46013;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration:none;
+}    
+/* FIM DO MENU */
+/* CORPO */
+main{
+    margin-top: 0 px;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: auto;
+    margin: 0 0 80px 0;
+    
+}
+.text-loc{
+    margin: 0px;
+    width: 70%;
+    text-align: top;
+}    
+.text-loc h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.text-loc h1 b{
+    color: #e46013;
+}
+.text-loc p{
+    color: #2a292a;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.text-bx{
+    margin: 10px;
+    width: 70%;
+}
+.text-bx h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.text-bx h1 b{
+    color: #e46013;
+}
+.text-bx p{
+    color: #2a292a;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.text-ser{
+    margin: 10px;
+    width: 70%;
+}
+.text-ser h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.text-ser h1 b{
+    color: #e46013;
+}
+.text-ser p{
+    color: #2a292a;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.text-bx .input-bx{
+    margin: 20px 0;
+    display: flex;
+}
+.text-bx .input-bx input{
+    width: 60%;
+    display: block;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    color: #3b3b3c;
+    font-size: 16px;
+ 
+}
+.text-bx .input-bx input::placeholder{
+    color: #3b3b3c;
+}
+.text-bx .input-bx button{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #e46013;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.img-ser{
+    width: 60%;
+}
+.img-loc{
+    width: 60%;
+}
+.img-ser img{
+    width: 60%;
+    margin: 0px 0px 0px 190px;
+}
+.img-bx img{
+    width: 100%;
+    
+}
+.img-log img{
+    width: 80%;
+    
+}
+.geral {
+
+    color: #2a292a;
+    font-weight: 400;
+    margin-top: 20px; 
+
+}
+/* FIM DO CORPO */
+/* RODAPE */
+footer{
+    background-color: #000000;
+    display: grid;
+    height: 280px;
+    max-width: 1300px;
+    align-items: center;
+
+}
+.redes {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin:10px;
+}
+.medias-socias{
+    
+    display: flexbox;
+    text-align: center;
+    
+}
+.medias-socias a{
+    text-decoration: none;
+}
+
+.medias-socias i{
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.rodape {
+    font-size: 19px;
+    color: white;
+    text-align: center;
+}
+
+form {
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    max-width: 500px;
+    color: #000000;
+}
+
+form h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #000000;
+    
+}
+
+form input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+form input:hover, textarea:hover, input:focus, textarea:focus {
+   
+    color: black;
+    font-weight: bold;
+}
+
+form .enviar {
+    background-color: #e46013;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: rgb(255, 255, 255);
+}
+form textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+    color: #000000;
+}
+
+form label {
+    margin-left: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+/* FIM DO RODAPE */
+/* RESPOSIVIDADE */
+@media (max-width:970px) {
+    nav .menu-icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        transition: 0.3s ease-in;
+        background-color: #e46013;
+    }
+    nav ul.active{
+        transform: translateX(0);
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        color: white;
+        
+    }
+    nav ul button{
+        background-color: #000000;
+        font-size: 18px;
+        margin: 10px;
+    }
+    main{
+        flex-direction: column;
+    }
+    footer{
+    
+        flex-direction: unset;
+        justify-content: center;
+        text-align: center;
+      
+    }
+    .text-bx,
+    .img-bx{
+        margin-bottom: 40px;
+        width: auto;
+        text-align: center;
+    }
+    .img-loc{
+        margin-bottom: 40px;
+        width: auto;
+        text-align: center;
+    }
+    .text-bx{
+        margin-bottom: 40px;
+    }
+    .text-loc{
+        margin-bottom: 40px;
+    }
+    .text-bx .input-bx{
+        justify-content: center;
+    }
+    .medias-socias{
+        margin-bottom: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .rodape{
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+   
+    .redes{
+        margin-bottom: 40px;
+        justify-content: center;
+        text-align: center;
+    }
+        
+}
