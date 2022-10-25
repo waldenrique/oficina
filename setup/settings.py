@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path, os
 from dotenv import load_dotenv
-from django.db.backends.mysql import client
 
 
 load_dotenv()
@@ -89,9 +88,14 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'oficina',
+        'USER': 'oficina',
+        'PASSWORD': 'Wa@14851',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
         'OPTIONS': {
-            'read_default_file': '/path/to/my.cnf',
-        },
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
