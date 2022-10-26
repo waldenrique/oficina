@@ -11,5 +11,4 @@ urlpatterns = [
     path('localizacao', views.localizacao, name='localizacao'),
     path('blog', views.blog, name='blog'),
  
-    
 ]
