@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div Class ="contenier"> 
+ 
+{%  include 'partials/menu.html'  %}
+        <!-- Fim do Menu -->
+        <!-- Corpo do site-->
+        <main>
+            <div class="text-bx">
+                <h1>Seu Carro em Boas Mãos <b>MOURA AUTO CENTER</b></h1>
+                <P> Traga seu carro e venha conferir um serviço diferenciado
+                    de qualidade.
+                </P>
+            
+                <div class="input-bx">
+                    <input type="email" placeholder="Seu E-mail para novidades">
+                    <button nome="Enviar">Enviar</button>
+                </div>
+            </div>
+            
+            <div class="img-bx">
+                <img src={% static 'img/mec.png'%}>
+            </div>
+        </main>
+         <!-- fim do Corpo do site-->
+         <!-- rodape-->
+         {%  include 'partials/footer.html'  %}
+</div>
+
+{% endblock %}
+ 

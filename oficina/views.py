@@ -16,6 +16,15 @@ def blog(request):
 def localizacao(request):
     return render(request,'localizacao.html')
 
+def login(request):
+    return render(request,'login.html')
+
+def logout(request):
+    return render(request,'logout.html')
+
+def deshdoard(request):
+    return render(request,'deshdoard.html')
+
 def servico(request):
     servicos = Servico.objects.all()
 
