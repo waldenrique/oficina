@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     'produtos',
     'carros',
     'app',
+    'adminlte3',
+    'adminlte3_theme',
 ]
 
 MIDDLEWARE = [
