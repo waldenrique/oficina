@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'produtos',
     'carros',
     'app',
+    'localflavor',
+    'ordem_servico',
    
 ]
 
