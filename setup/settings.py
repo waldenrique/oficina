@@ -11,13 +11,14 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path, os
+from pickle import TRUE
 from dotenv import load_dotenv
 
 
 load_dotenv()
 
 
-SECRET_KEY = 'SECRET_KEY'
+SECRET_KEY = 'Wa@ngo-i-+!@$%ˆ&*()_)(*&ˆ%$%ˆ&*(qwertyuiopasdfghjklcvbnm,qwertyuiopsdfghjkcvbnmwertyuidfghjvbnwertyuisdfghjkcvbnm'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,11 +31,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.mouraautocenter.com.br','mouraautocenter.com.br']
 
-
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
+SECURE_HSTS_SECONDS = False
 # Application definition
 
 INSTALLED_APPS = [
